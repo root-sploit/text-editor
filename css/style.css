@@ -1,0 +1,35 @@
+* {
+				box-sizing: border-box;
+				margin: 0;
+}
+
+main {
+				display: flex;
+}
+
+
+textarea {
+				border: none;
+				background-color: #10192A;
+				color: white;
+				outline: none;
+				height: 648px;
+				width: 95%;
+				line-height: 1.5;
+				padding: 0 .4em;
+				font-size: 1em.1em;
+				display: inline-block;
+}
+
+#line-num {
+				background-color: #10192A;
+}
+
+#line-num .number {
+				border-right: 1px solid gray;
+				height: 20px;
+				background-color: #10192A;
+				color: white;
+				text-align: right;
+				padding: 0 .4em;
+}
