@@ -3,10 +3,13 @@
 				margin: 0;
 }
 
+body {
+				padding: 1em;
+}
+
 main {
 				display: flex;
 }
-
 
 textarea {
 				border: none;
@@ -32,4 +35,16 @@ textarea {
 				color: white;
 				text-align: right;
 				padding: 0 .4em;
+}
+
+button {
+		  background: none;
+				border: none;
+				width: 2em;
+				padding: 0;
+				margin-bottom: 1em;
+}
+
+button img {
+				width: 100%;
 }

@@ -6,11 +6,12 @@ text.addEventListener("keydown", (event) => {
 				if (event.key == "Enter")
 				{
 								addNumber();
-								if (count >= 32) {
+								if (count >= 10) {
 												let height = text.clientHeight + 25;
-												text.style.height = height + "px";	
+												text.style.height = height + "px";
 								}							
 				}
+				
 });
 
 function addNumber() {
@@ -22,7 +23,8 @@ function addNumber() {
 }
 
 const downloadToFile = (content, filename, contentType) => {
-  const a = document.createElement('a');
+		console.log(filename);
+  const a = document.createElement("a");
   const file = new Blob([content], {type: contentType});
   
   a.href= URL.createObjectURL(file);
@@ -32,8 +34,10 @@ const downloadToFile = (content, filename, contentType) => {
 	URL.revokeObjectURL(a.href);
 };
 
-document.querySelector('#btnSave').addEventListener('click', () => {
-  const textArea = document.querySelector('textarea');
+document.querySelector("#btnSave").addEventListener("click", () => {
+  const textArea = document.querySelector("textarea");
+  let fileName = prompt("Enter file name: ");
+  fileName = fileName.split(".")[0];
   
-  downloadToFile(textArea.value, 'my-new-file.txt', 'text/plain');
+  downloadToFile(textArea.value, `${fileName}.txt`, "text/plain");
 });
