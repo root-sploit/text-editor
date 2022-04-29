@@ -4,11 +4,14 @@
 }
 
 body {
-				padding: 1em;
+				padding: .5em;
 }
 
 main {
 				display: flex;
+				height: 750px;
+				overflow-y: scroll;
+				background-color: #10192A;
 }
 
 textarea {
@@ -16,12 +19,14 @@ textarea {
 				background-color: #10192A;
 				color: white;
 				outline: none;
-				height: 648px;
+				height: 750px;
 				width: 95%;
 				line-height: 1.5;
 				padding: 0 .4em;
 				font-size: 1em.1em;
 				display: inline-block;
+				letter-spacing: 1px;
+				font-size: 1em;
 }
 
 #line-num {
@@ -35,6 +40,7 @@ textarea {
 				color: white;
 				text-align: right;
 				padding: 0 .4em;
+				font-size: 1em;
 }
 
 button {

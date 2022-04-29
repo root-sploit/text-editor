@@ -6,8 +6,8 @@ text.addEventListener("keydown", (event) => {
 				if (event.key == "Enter")
 				{
 								addNumber();
-								if (count >= 10) {
-												let height = text.clientHeight + 25;
+								if (count >= 25) {
+												let height = text.clientHeight + 20;
 												text.style.height = height + "px";
 								}							
 				}
